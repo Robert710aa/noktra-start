@@ -1,4 +1,4 @@
-           await pool.query('COMMIT');
+               await pool.query('COMMIT');
 
             // Pobranie licznika zgłoszeń
             const count = await getSubmissionCount();
