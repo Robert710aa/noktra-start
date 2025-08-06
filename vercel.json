@@ -1,18 +1,7 @@
 {
-    "version": 2,
-    "functions": {
-        "api/airdrop.js": {
-            "runtime": "nodejs18.x"
-        }
-    },
-      "routes": [
-    {
-      "src": "/api/airdrop",
-      "dest": "/api/airdrop.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
