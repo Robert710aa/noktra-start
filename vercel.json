@@ -2,7 +2,7 @@
     "version": 2,
     "functions": {
         "api/airdrop.js": {
-            "runtime": "nodejs18"
+            "runtime": "nodejs18.x"
         }
     },
       "routes": [
